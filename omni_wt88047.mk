@@ -15,8 +15,11 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Tesla stuff.
-$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
+# Inherit some common  stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 720x480
 
 # Inherit from wt88047 device
 $(call inherit-product, device/wingtech/wt88047/device.mk)
@@ -28,8 +31,11 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 BOARD_VENDOR := wingtech
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := wt88047
-PRODUCT_NAME := tipsy_wt88047
+PRODUCT_NAME := omni_wt88047
 PRODUCT_MANUFACTURER := Wingtech
 PRODUCT_MODEL := Redmi 2
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
