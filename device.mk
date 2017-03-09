@@ -225,7 +225,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8916 \
     Snap
 
 PRODUCT_PROPERTY_OVERRIDES += \

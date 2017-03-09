@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Bootanimation
-TARGET_BOOTANIMATION_SIZE := 720x480
+TARGET_BOOTANIMATION_SIZE := 720x407
 
 # Inherit from wt88047 device
 $(call inherit-product, device/wingtech/wt88047/device.mk)

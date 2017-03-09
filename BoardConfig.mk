@@ -123,6 +123,7 @@ TARGET_CRYPTFS_HW_PATH := $(DEVICE_PATH)/cryptfs_hw
 TARGET_QCOM_AUDIO_VARIANT := caf-msm8916
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8916
 TARGET_QCOM_DISPLAY_VARIANT := caf-msm8916
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8916
 
 # Display
 BOARD_USES_ADRENO := true
@@ -208,9 +209,6 @@ TARGET_USES_WCNSS_CTRL := true
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-
-# Tap-to-Wake
-TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 
 # inherit from the proprietary version
 -include vendor/wingtech/wt88047/BoardConfigVendor.mk
